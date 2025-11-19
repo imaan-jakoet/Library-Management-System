@@ -20,12 +20,12 @@ namespace LibraryManagementSystem.Business.Models
 
         public void addBook(Book book)
         {
-            books.add(book);
+            books.add(bookId, book);
         }
 
         public void removeBook(Book book)
         {
-            books.remove(book);
+            books.remove(bookId, book);
         }
 
         public Book searchBook(string bookName)

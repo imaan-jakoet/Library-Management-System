@@ -1,17 +1,12 @@
 using System.Collections.Generic;
 using System;
+using LibraryManagementSystem; 
 
 namespace LibraryManagementSystem.Models {
     public class Book
     {
-        //Attributes
-        private int id; //Create unique isbn for each book 
-        private string title;
-        private string author;
-        private int datePublished;
-        private string genre;
-
         //Getters and Setters
+        public int bookId {get; set;}
         public string Title { get; set; }
         public string Author { get; set; }
         public string ISBN { get; set; }
